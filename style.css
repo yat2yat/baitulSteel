@@ -1,0 +1,556 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-weight: 300;
+    color: #111;
+}
+.jumbotron {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(assets/oilIndustry.jpg);
+    background-size: cover;
+    background-color: #EFFFFD;
+}
+
+.jumbotron .content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.jumbotron .content h2 {
+    font-size: 3.6em;
+    color: #EFFFFD;
+}
+
+.jumbotron .content p {
+    font-size: 1em;
+    color: #fff;
+}
+.btn {
+    font-size: 1em;
+    color: #85F4FF;
+    background: #42C2FF;
+    display: inline-block;
+    margin-top: 50px;
+
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transform: 0.5s;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    border-radius:15px;
+    color:#EFFFFD;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background: #B8FFF9;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .symbol {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+
+}
+
+header.sticky .symbol {
+    color: #111;
+
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+header.sticky .navigation li a {
+    color: #111;
+}
+header .navigation li a:hover {
+    color: #42C2FF;
+}
+
+section {
+    padding: 100px;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col {
+    position: relative;
+    width: 48%;
+}
+
+.titleText {
+    color: #111;
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.titleText span {
+    color: #85F4FF;
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+.row .col .imgBox {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+
+.row .col .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.goods .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    border-radius: 25%;
+}
+
+.goods .content .box {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #B8FFF9;
+    border-radius: 25%;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.goods .content .box .imgBox {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.goods .content .box .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25%;
+}
+
+.goods .content .box .text {
+    padding: 15px 0 5px;
+}
+
+.goods .content .box .text h3 {
+    font-weight: 400;
+    color: #111;
+    text-align: center;
+}
+
+.expert .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.expert .content .box {
+    width: 250px;
+    margin: 15px;
+}
+
+.expert .content .box .imgBox {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.expert .content .box .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 55%;
+}
+
+.expert .content .box .text {
+    padding: 15px 0 5px;
+}
+
+.expert .content .box .text h3 {
+    font-weight: 400;
+    color: #111;
+    text-align: center;
+}
+.testimoni {
+    background: url(Assets/bg3.jpg);
+    background-size: cover;
+}
+
+.white .titleText,
+.white p {
+    color: #111;
+}
+
+.testimoni .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.testimoni .content .box {
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.testimoni .content .box .imgBox {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testimoni .content .box .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimoni .content .box .text {
+    text-align: center;
+}
+
+.testimoni .content .box .text p {
+    color: #666;
+    font-style: italic;
+}
+
+.testimoni .content .box .text h3 {
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: #42C2FF;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+}
+.kontak {
+    background: url(Assets/bg4.jpg);
+    background-size: cover;
+}
+
+.kontak .titleText,
+.kontak p {
+    color: #111;
+}
+
+.formKontak {
+    padding: 75px 50px;
+    background: #111;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.formKontak h3 {
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.formKontak .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.formKontak .inputBox input,
+.formKontak .inputBox textarea {
+    width: 100%;
+    border: 1.5px solid #85F4FF;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.formKontak .inputBox input[type="submit"] {
+    font-size: 1em;
+    color: #111;
+    background: #85F4FF;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.profile .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.profile .titleText {
+    color: #111;
+}
+
+.profile .content .box {
+    width: 140px;
+    margin: 10px;
+    padding: 10px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile .content .box .imgBox img {
+    position: relative;
+    z-index: 50;
+    border-radius: 55%;
+    display: block;
+    height: 250px;
+    width: 250px;
+    border: 5px solid #B8FFF9;
+    object-fit: cover;
+    margin: 10px auto;
+    transition: all 0.3s ease;
+}
+
+.profile .content .box .text {
+    text-align: center;
+    color: #42C2FF;
+}
+
+.profile .content .box .text h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.copyrightText {
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #42C2FF;
+}
+
+.copyrightText p {
+    color: #333;
+}
+
+.copyrightText a {
+    color: #85F4FF;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media(max-width: 990px) {
+
+    header,
+    header.sticky {
+        padding: 10px 20px;
+    }
+
+    header .navigation {
+        display: none;
+    }
+
+    header .navigation.active {
+        width: 100%;
+        height: calc(100%-68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    header .navigation li {
+        margin-left: 0;
+    }
+
+    header .navigation li a {
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+
+    .Toggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(assets/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .Toggle.active {
+        background: url(assets/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header.sticky .Toggle {
+        filter: invert(1);
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .banner .content h2 {
+        font-size: 3em;
+        color: #fff;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col {
+        position: relative;
+        width: 100%;
+    }
+
+    .row .col .imgBox {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .goods .content {
+        margin-top: 20px;
+    }
+
+    .goods .content .box {
+        margin: 20px;
+    }
+    .goods content box imgBox .text{
+        text-align: center;
+    }
+
+    .goods .content .box .imgBox {
+        height: 260px;
+    }
+
+    .title {
+        text-align: left;
+    }
+
+    .titleText {
+        font-size: 3em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .testimoni .content .box {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .formKontak {
+        padding: 55px 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner .content h2 {
+        font-size: 2.2em;
+        color: #fff;
+    }
+}

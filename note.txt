@@ -1,0 +1,35 @@
+window.addEventListener("scroll", function () {
+    const header = document.querySelector('header');
+    header.classList.toggle("sticky", window.scrollY > 0)
+  });
+
+  function toggleMenu(){
+    const menuToggle = document.querySelector('.menuToggle');
+    const navigation = document.querySelector('.navigation');
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+  }
+
+          <div class="box">
+            <div class="imgBox">
+              <img src="assets/pict5Cuso4.jpg" alt="Gambar 5" />
+            </div>
+            <div class="text">
+              <h3>CusO4 Solid</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="imgBox">
+              <img src="assets/pict61GoldOre.jpg" alt="Gambar 6" />
+            </div>
+            <div class="text">
+              <h3>Gold Ore</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="imgBox">
+              <img src="assets/pict7CopperOre.jpg" alt="Gambar 7" />
+            </div>
+            <div class="text">
+              <h3>Copper Ore</h3>
+            </div>
